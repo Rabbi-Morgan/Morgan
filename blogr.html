@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="author" content="Omobolaji Anuoluwapo">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="blogr.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | [Blogr]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header_container">
+      <div class="logo_side">
+    <div class="logo">
+    <img src=".//images/logo.svg" alt="logo"></div>
+    <div class="toggle-btn">
+      <img class="open" src=".//images/icon-hamburger.svg" alt="open">
+      <img class="close display" src=".//images/icon-close.svg" alt="close none">
+    </div></div>
+  <div class="navigation">
+    <div class="product-dropdown dropdown">
+      <a href="#" class="dropbtn">Product <img class="arrow" src=".//images/icon-arrow-dark.svg" alt=""></a>
+      <div class="drop-items">
+        <ul class="footer_nav_e head_nav">
+          <li><a href="#">Overview</a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">Marketplace</a></li>
+          <li><a href="#">Features</a></li>
+          <li><a href="#">Integrations</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="company-dropdown dropdown">
+      <a href="#" class="dropbtn">Company <img class="arrow" src=".//images/icon-arrow-dark.svg" alt=""></a>
+      <div class="drop-items">
+        <ul class="footer_nav_e head_nav">
+          <li><a href="#">About</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Careers</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="connect-dropdown dropdown">
+      <a href="#" class="dropbtn">Connect <img class="arrow" src=".//images/icon-arrow-dark.svg" alt=""></a>
+      <div class="drop-items">
+        <ul class="footer_nav_e head_nav">
+          <li><a href="#">Contact</a></li>
+          <li><a href="#">Newsletter</a></li>
+          <li><a href="#">LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="header_btns">
+      <button class="header_btn login">Login</button>
+      <button class="header_btn signup">Sign Up</button>
+    </div>
+</div>
+
+<div class="header_contents">
+  <div class="header_content">
+    <h1>A modern publishing platform</h1>
+    <p>Grow your audience and build your online brand</p>
+  </div>
+  <div class="header_content_btns"><button class="header_btn start">Start for Free</button><button class="header_btn learn">Learn More</button></div>
+</div>
+</div>
+</header>
+<section class="main_content">
+  <div class="container main_content_container">
+    <h1 class="content_heading main_content_heading">Designed for the future</h1>
+    <div class="contain_editor">
+    <div class="editor"><img src=".//images/illustration-editor-mobile.svg" alt="editor"></div>
+    <h1 class="content_heading">Introducing an extensible editor</h1>
+    <p class="content_p">
+      Blogr features an exceedingly intuitive interface which lets you focus on one thing: creating content. The editor supports management of multiple blogs and allows easy manipulation of embeds such as images, videos, and Markdown. Extensibility with plugins and themes provide easy ways to add functionality or change the looks of a blog.
+    </p>
+    <h1 class="content_heading">Robust content management</h1>
+    <p class="content_p">Flexible content management enables users to easily move through posts. Increase the usability of your blog 
+      by adding customized categories, sections, format, or flow. With this functionality, you’re in full control.
+    </p>
+  </div>
+  </div>
+</section>
+<div class="state_container">
+  <div class="state container">
+    <div class="state_img"><img src=".//images/illustration-phones.svg" alt="phones"></div>
+    <div class="state_text">
+    <h1 class="state_heading">State of the Art Infrastructure</h1>
+    <p class="state_p"> With reliability and speed in mind, worldwide data centers provide the backbone for ultra-fast connectivity. 
+      This ensures your site will load instantly, no matter where your readers are, keeping your site competitive.</p></div>
+  </div>
+</div>
+<section class="main_content_2">
+  <div class="container main_content_container">
+          <div class="contain_editor">
+    <div class="editor"><img src=".//images/illustration-laptop-mobile.svg" alt="editor"></div>
+    <h1 class="content_heading"> Free, open, simple</h1>
+    <p class="content_p">
+      Blogr is a free and open source application backed by a large community of helpful developers. It supports 
+      features such as code syntax highlighting, RSS feeds, social media integration, third-party commenting tools, 
+      and works seamlessly with Google Analytics. The architecture is clean and is relatively easy to learn.
+    </p>
+    <h1 class="content_heading"> Powerful tooling</h1>
+    <p class="content_p"> Batteries included. We built a simple and straightforward CLI tool that makes customization and deployment a breeze, but
+      capable of producing even the most complicated sites.
+    
+    </p>
+  </div>
+  </div>
+
+</section>
+
+ <footer>
+   <div class="f_logo"><img src=".//images/logo.svg" alt=""></div>
+   <div class="footer_nav"><div class="footer_nav_h"><a href="#">Product</a></div>
+   <ul class="footer_nav_e">
+     <li><a href="#">Overview</a></li>
+     <li><a href="#">Pricing</a></li>
+     <li><a href="#">Marketplace</a></li>
+     <li><a href="#">Features</a></li>
+     <li><a href="#">Integrations</a></li>
+   </ul>
+  </div>
+  <div class="footer_nav"><div class="footer_nav_h"><a href="#">Company</a></div>
+  <ul class="footer_nav_e">
+    <li><a href="#">About</a></li>
+    <li><a href="#">Team</a></li>
+    <li><a href="#">Blog</a></li>
+    <li><a href="#">Careers</a></li>
+  </ul>
+ </div>
+ <div class="footer_nav"><div class="footer_nav_h"><a href="#">Connect</a></div>
+ <ul class="footer_nav_e">
+  <li><a href="#">Contact</a></li>
+  <li><a href="#">Newsletter</a></li>
+  <li><a href="#">LinkedIn</a></li>
+</ul>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Omobolaji Anuoluwapo</a>
+ </footer>
+  </div>
+</body>
+<script src="blogr.js"></script>
+
+</html>
