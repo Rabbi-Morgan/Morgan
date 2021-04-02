@@ -25,7 +25,9 @@
 }
 
 /* header--- both typography and layout and media queries */
-
+body {
+    overflow-x: hidden;
+}
 header {
     width: 100%;
     height: 100vh;
@@ -85,6 +87,12 @@ header {
     margin-bottom: 3em;
 
 }
+.header_btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
 
 .header_btn {
     width: 8em;
@@ -96,9 +104,17 @@ header {
     border: 1px solid white;
     background-color: transparent;
     margin: 0 .4em;
+    margin-bottom: 1rem;
     color: var(--white_text);
+    transition: transform .1s ease;
 }
+.header_btn:focus, .header_btn:hover {
+    outline: none;
 
+}
+.header_btn:active {
+    transform: scale(.98);
+}
 .start {
     color: var(--light_red_text);
     background-color: var(--white_text);
@@ -115,10 +131,15 @@ header {
     top: auto;
     right: 0;
     width: 2rem;
+    opacity: 1;
+    transition: opacity .3s linear;
 }
-.close {
+
+.navigation {
     display: none;
 }
+
+
 
 /* end of the header */
 
@@ -227,20 +248,22 @@ li {
     background-color: var(--white_text);
     margin-top: 8rem;
     padding: 2em 0;
-    border-radius: 10px;
+    border-radius: 5px;
     text-align: center;
     overflow-y: scroll;
     z-index: 3;
+    box-shadow: 0 0 15px 5px rgba(0, 0, 0, .2);
 }
 .login {
     color: var(--very_dark_black_blue_footer_background);
 
 }
 .signup {
-    background-color: var(--light_red);
+    background: linear-gradient(to right, var(--very_light_red), var(--light_red));
 }
 .arrow  {
     width: .7rem;
+    transition: transform .1s linear;
 }
 
 .head_nav a {
@@ -253,6 +276,11 @@ li {
     margin: 1rem auto;
     border-radius: 10px;
     display: none;
+    transition: display .5s linear;
+}
+.navigation:last-child {
+    border: 1px solid var(--very_dark_gray_blue);
+
 }
 .dropbtn {
     font-weight: bold;
@@ -264,4 +292,34 @@ li {
 }
 .dropdown:hover .drop-items{
     display: block;
+}
+
+
+
+
+/* image rotate 180 degrees on click */
+
+.rotate {
+    transform: rotate(180deg);
+}
+
+/* trial and error */
+
+.display {
+    display: none !important;
+    /* opacity: 0 !important; */
+}
+
+.drop-items ul li:hover {
+    background-color: whitesmoke;
+    transform: scale(.98);
+}
+
+/* end of the mobile version and begining of the laptop version */
+
+/* media queries */
+
+@media (min-width: 1400px) {
+
+    
 }
